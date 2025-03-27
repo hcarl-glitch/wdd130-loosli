@@ -1,51 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+body{
+    background-color: #7f2013;
+}
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: blue;
+    grid-template-columns: 150px auto; /* Logo gets 150px, rest goes to links */
+    align-items: center;              /* Vertically center content */
+    background-color: #3d6528 ;        /* Optional background styling */
+    padding: 10px;     
+    border-radius: 20px 20px 0 0;
 }
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 6fr 3fr;
 }
 .headshot{ 
-    grid-column: 1/3;
-    grid-row: 2/5;
-
-}
-#firstpicture{
-    height: 300px;
-    width: 200px;
-    grid-column: 1/3;
-    grid-row: 2/5;
-    margin-top: 200px;
-
-}
-.logo{
+    position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    
+}
+.headshot img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo{
+    max-width: 100%;                  /* Ensures the logo fits its container */
+    height: 100%;                     /* Maintains logo proportions */
+}
+.navigationbar{
+    display: flex;                    /* Makes the links horizontal */
+    justify-content: flex-end;        /* Aligns links to the right */
+    gap: 100px;  
+    text-decoration: none;            /* Removes underline */                    /* Text color */
+    font-size: 30px;   
 
 }
-.nav{
-
-    grid-column: 2/4;
-    grid-row: 1/2;
-
+.navigationbar a{
+    color: black;
+    text-decoration: none;
 }
-.about{
-    grid-column: 3/6;
-    grid-row: 2/5;
+.resume{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    width: 70%;
+    margin: auto; 
+    font-weight: bold;
+}
+.purpose{
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: auto;  
+    width: 90%;
 }
 .foot {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
-
+main{
+    background-color: #ebcb6a;    
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.why{
+    flex-direction: column;
+    background-color: #ebcb6a;
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: auto;
+    width: 90%;
+}
+.what{
+    flex-direction: column;
+    background-color: #ebcb6a;
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: auto;
+    width: 90%;
+}
+.portfolio{
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: auto;  
+    width: 90%;
+}
+ul{
+    list-style-type: circle;
+    font-family: Helvetica, sans-serif;
+}
+.purpose p{
+    font-family: Helvetica, sans-serif;
+    text-indent: 20px;
+}
 footer{
+    background: #3d6528;
     grid-column: 2/3;
     grid-row: 1/2;
-}
+    display: flex;
+    justify-content: space-between; /* Evenly space the items across the footer */
+    padding: 20px; /* Adds spacing around the footer */
+    color: black; /* Text color */
+    font-size: 30px;
+    border-radius: 0 0 20px 20px;
+  }
+h3{
+    font-family: "IM Fell French Canon SC";
+    text-align: center;
+  }
+ footer a{
+    color: black;
+    text-decoration: none;
+  }
+  

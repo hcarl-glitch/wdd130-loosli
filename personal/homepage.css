@@ -95,6 +95,15 @@ main{
     margin: auto;
     width: 90%;
 }
+.provides{
+    flex-direction: column;
+    background-color: #ebcb6a;
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: auto;
+    width: 90%;
+}
 .portfolio{
     flex-direction: column;
     grid-column: 2/3;
@@ -102,6 +111,7 @@ main{
     margin: auto;  
     width: 90%;
 }
+
 ul{
     list-style-type: circle;
     font-family: Helvetica, sans-serif;

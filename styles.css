@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+    --primary-color: #3d6528;
+    --secondary-color: #ebcb6a;
+    --accent1-color: #7f2013;
+    --accent2-color: white;
+
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+
+    --headline-color-on-white: #3d6528;
+    --headline-color-on-color: white;
+    --paragraph-color-on-white: #3d6528;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #3d6528;
+    --nav-link-color: white;
+    --nav-hover-link-color: #3d6528;
+    --nav-hover-background-color: white;
+    --work-experience-background: #f5e6d3; /* Slightly tanner color */
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--paragraph-background-color);
+    color: var(--headline-color-on-color);
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .navbar ul li {
+    margin: 0 10px;
+}
+
+header .navbar ul li a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+header .navbar ul li a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+main {
+    padding: 20px;
+}
+
+main h1, main h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    background-color: var(--work-experience-background);
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+article p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--paragraph-background-color);
+    color: var(--headline-color-on-color);
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
